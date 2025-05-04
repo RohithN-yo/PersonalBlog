@@ -1,0 +1,37 @@
+body {
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Custom button focus */
+a:focus, button:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Hide scrollbars for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e0e7ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #b6c6e3;
+  border-radius: 4px;
+} 
